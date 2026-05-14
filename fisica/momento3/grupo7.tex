@@ -58,7 +58,6 @@ sofia.valero@campusucc.edu.co
 \maketitle
 
 \begin{abstract}
-
 En este informe se desarrollan dos ejercicios de análisis de circuitos eléctricos utilizando los 
 métodos de supermallas y análisis nodal. Se realizaron procedimientos matemáticos completos, 
 simulaciones y comparación de resultados teóricos. Además, en el ejercicio de análisis nodal se 
@@ -66,13 +65,11 @@ implementó el circuito físicamente para verificar experimentalmente los valore
 \end{abstract}
 
 \begin{IEEEkeywords}
-
 Circuitos eléctricos, análisis nodal, supermallas, leyes de Kirchhoff, 
 corrientes de malla, voltajes nodales
 \end{IEEEkeywords}
 
 \section{Introducción}
-
 El análisis de circuitos eléctricos es una herramienta fundamental en el estudio de sistemas 
 electrónicos y eléctricos. Existen diferentes métodos que permiten determinar corrientes y voltajes 
 dentro de un circuito de manera organizada y matemática.
@@ -125,10 +122,39 @@ $v_{x2}$.
 %Falta
 
 \subsection{Simulación}
-%Falta
+El circuito fue simulado utilizando el software \textit{SimulIDE}, obteniendo resultados que se 
+compararán con los cálculos teóricos realizados mediante el método de supermallas.
+
+%Suba la imagen de la simulacion del circuito por supermallas y le pone simulacion supermalla, THX
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.48\columnwidth]{simulacion_supermalla.png}
+%\caption{Simulación del circuito mediante análisis por supermallas}
+%\end{figure}
 
 \subsection{Tabla de resultados}
-%Falta
+
+\begin{table}[h]
+\centering
+\caption{Comparación entre resultados teóricos, simulados}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Variable} & \textbf{Teórico} & \textbf{Simulado} & \textbf{Error \%} & \textbf{Observacion} \\
+\hline
+$I_1$ & & & & \\
+\hline
+$I_2$ & & & & \\
+\hline
+$I_3$ & & & & \\
+\hline
+$I_4$ & & & & \\
+\hline
+$V_{x1}$ & & & & \\
+\hline
+$V_{x2}$ & & & & \\
+\hline
+\end{tabular}
+\end{table}
 
 \section{Ejercicio 2: Método de análisis nodal}
 
@@ -145,9 +171,7 @@ para determinar los voltajes $V_a$, $V_b$ y $V_c$ respecto a tierra.
 %\label{fig:nodal}
 %\end{figure}
 
-\subsection{Cálculos matemáticos}
-
-\subsubsection{Datos del circuito}
+\subsection{Datos del circuito}
 
 \begin{align*}
 V_s &= 9V \\
@@ -158,6 +182,8 @@ R_4 &= 820\Omega \\
 R_5 &= 1.5k\Omega \\
 R_6 &= 470\Omega
 \end{align*}
+
+\subsection{Cálculos matemáticos}
 
 Los nodos desconocidos son:
 
@@ -443,12 +469,12 @@ I_{R6} &= 1.00mA
 \subsection{Simulación}
 
 El circuito fue simulado utilizando el software \textit{SimulIDE}, obteniendo resultados muy cercanos a los cálculos teóricos realizados mediante análisis nodal.
-%Suba la imagen de la simulacion del circuito por analisis nodal y le pone simulacion nodal, THX
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=0.48\columnwidth]{simulacion_nodal}
-%\caption{Simulación del circuito mediante análisis nodal}
-%\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.48\columnwidth]{simulacion2.png}
+\caption{Simulación del circuito mediante análisis nodal}
+\end{figure}
 
 \subsubsection{Resultados obtenidos en simulación}
 
